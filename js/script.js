@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
-        var self = this;
-        var name = "";
+        
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("/data/name.json", 
+          .sendGetRequest("https://drive.google.com/file/d/0BxWEYaFn-zbbNURHOGlrZzN5Tnc/view?usp=sharing", 
             function (request) {
               var name = request.responseText;
 
