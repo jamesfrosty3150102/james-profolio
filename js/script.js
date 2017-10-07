@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",
         
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("/data/name.txt", 
+          .sendGetRequest("/james-protfolio/data/name.txt", 
             function (request) {
               var name = request.responseText;
 
