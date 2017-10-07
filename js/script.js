@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",
         
         // Call server to get the name
         $ajaxUtils
-          .sendGetRequest("https://drive.google.com/file/d/0BxWEYaFn-zbbNURHOGlrZzN5Tnc/view?usp=sharing", 
+          .sendGetRequest("/data/name.txt", 
             function (request) {
               var name = request.responseText;
 
